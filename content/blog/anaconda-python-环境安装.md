@@ -4,8 +4,9 @@ date: 2024-09-25T06:45:57.533Z
 ---
 
 
+
 1. 下载 anaconda
-anaconda安装教程：https://mp.weixin.qq.com/s/XIuTP1iXokWG7SKj3h7A6Q
+https://www.anaconda.com/
 
 2.  打开控制台 打开Anaconda的Prompt
 输入【conda env list】可查看当前所有已创建好的环境
