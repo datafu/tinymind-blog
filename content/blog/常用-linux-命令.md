@@ -4,14 +4,15 @@ date: 2024-09-26T07:30:50.607Z
 ---
 
 
+
 ## 1. 上传和下载
 ### 1.1 上传
 
-scp -p 22 xxx.tar  kd@1.1.1.1:/xx/xx
+scp -p 22 xxx.tar user1@1.1.1.1:/xx/xx
 
 
 ### 1.2 下载
-scp -p 22 kd@1.1.1.1:/xx/xx  /abc/cd
+scp -p 22 user1@1.1.1.1:/xx/xx  /abc/cd
 
 
 
