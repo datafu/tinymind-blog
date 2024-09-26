@@ -3,6 +3,7 @@ title: 常用 linux 命令
 date: 2024-09-26T07:30:50.607Z
 ---
 
+
 ## 1. 上传和下载
 ### 1.1 上传
 
@@ -32,7 +33,9 @@ find . -type f -print0 | xargs -0 grep -l 'EAP-Type-Identity'
 
 ## 4.  创建分组 用户
  groupadd abc
+
 useradd -g abc -d /run/abc  -s /usr/bin/bash -m  user1
+
 passwd user1
 
 ### 4.1 修改目录所有者
