@@ -7,6 +7,7 @@ date: 2024-09-30T02:13:56.504Z
 
 
 
+
 # 1. 根据标签获取
 
 ### 1.1 span text
@@ -32,4 +33,13 @@ tag:div@text():unlock
 ### 1.6 根据 title 获取  插件
 wall = page.get_tab(title='xxx Wallet')
 
+
+### 1.7 模糊查询 类
+
+tag:input[class*=password]：
+这个选择器匹配所有类型为 input 的元素，其 class 属性中包含字符串 "password" 的元素。
+例如，class="input-input password" 或 class="input password-field" 都会被匹配。
+tag:input@class=password：
+这个选择器匹配所有类型为 input 的元素，其 class 属性完全等于 "password" 的元素。
+只有当 class 属性的值完全是 "password" 时，才会被匹配，例如 class="password"
 
