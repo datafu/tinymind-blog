@@ -6,6 +6,7 @@ date: 2024-09-30T02:13:56.504Z
 
 
 
+
 # 1. 根据标签获取
 
 ### 1.1 span text
@@ -28,5 +29,7 @@ tag:div@text():unlock
  for i in range(3):
             inpts[i].input(xxx[i])
 
+### 1.6 根据 title 获取  插件
+wall = page.get_tab(title='xxx Wallet')
 
 
