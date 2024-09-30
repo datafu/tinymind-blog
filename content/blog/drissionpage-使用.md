@@ -5,6 +5,7 @@ date: 2024-09-30T02:13:56.504Z
 
 
 
+
 # 1. 根据标签获取
 
 ### 1.1 span text
@@ -20,5 +21,12 @@ tag:div@text():unlock
 
 #### 1.4 打开 plugin
  self.driver.get("chrome-extension://mcohilncbfahbmgdjkbpemcciiolgcge/popup.html#/initialize")
+
+
+### input 获取多输入框
+ inpts=self.driver.eles("tag:input@class=words-inputs__container__input")
+ for i in range(3):
+            inpts[i].input(xxx[i])
+
 
 
