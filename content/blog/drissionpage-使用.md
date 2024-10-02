@@ -8,6 +8,7 @@ date: 2024-09-30T02:13:56.504Z
 
 
 
+
 # 1. 根据标签获取
 
 ### 1.1 span text
@@ -42,4 +43,17 @@ tag:input[class*=password]：
 tag:input@class=password：
 这个选择器匹配所有类型为 input 的元素，其 class 属性完全等于 "password" 的元素。
 只有当 class 属性的值完全是 "password" 时，才会被匹配，例如 class="password"
+
+
+
+### 1.8 多个 class 组合
+#### 1.8.1 组合 type = pass and value
+password_input = wall.ele('x://input[@type="password"][@value=""]')
+            if password_input:
+                password_input.input(PASSWORD)
+                page.wait(1)
+
+
+
+
 
