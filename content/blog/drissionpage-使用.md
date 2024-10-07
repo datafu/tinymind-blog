@@ -10,11 +10,18 @@ date: 2024-09-30T02:13:56.504Z
 
 
 
+
 # 1. 根据标签获取
 
 ### 1.1 span text
 
 ele("tag:span@text():Unlock")
+
+### 1.1.1 button text
+age.ele("tag:button@text():Preview").click()
+age.ele("tag:button@text():Swap").click()
+
+
 
 ### 1.2 input  class
 
