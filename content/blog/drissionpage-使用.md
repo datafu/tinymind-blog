@@ -9,6 +9,7 @@ date: 2024-09-30T02:13:56.504Z
 
 
 
+
 # 1. 根据标签获取
 
 ### 1.1 span text
@@ -53,6 +54,14 @@ password_input = wall.ele('x://input[@type="password"][@value=""]')
                 password_input.input(PASSWORD)
                 page.wait(1)
 
+
+
+### 1.9 shdow 获取
+#### 1.9.1 进入元素shadow dom内再定位okx
+ shadow = swap_page.ele("tag:div@data-testid=dynamic-modal-shadow").shadow_root
+
+#### 1.9.2 点击shdow 元素
+shadow.ele("tag:button@data-testid=SelectNetworkButton").click()
 
 
 
