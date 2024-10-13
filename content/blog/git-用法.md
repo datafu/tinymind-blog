@@ -3,6 +3,7 @@ title: git 用法
 date: 2024-10-13T00:18:35.626Z
 ---
 
+
 ### 1. git init 
 初始化git仓库
 
@@ -19,6 +20,15 @@ git remote add xxxxxx.project
 ### 5. 上传到git 仓库
 git push -u origin master
 
+
+### 6. 举个例子
+echo "# git-test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/xxxx/git-test.git
+git push -u origin main
 
 
 ## 2. 协同开发常见流程
