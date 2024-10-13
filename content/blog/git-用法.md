@@ -4,6 +4,7 @@ date: 2024-10-13T00:18:35.626Z
 ---
 
 
+
 ### 1. git init 
 初始化git仓库
 
@@ -30,6 +31,12 @@ git branch -M main
 git remote add origin https://github.com/xxxx/git-test.git
 git push -u origin main
 
+
+### 6.2 远程 clone
+…or push an existing repository from the command line
+git remote add origin https://github.com/datafu/git-test.git
+git branch -M main
+git push -u origin main
 
 ## 2. 协同开发常见流程
 
